@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Data Scientist",
+        "description": "Looking for a data scientist with expertise in machine learning and Python.",
+        "skills_required": ["machine learning", "python", "data analysis"]
+
+    },
+    {
+        "title": "Software Engineer",
+        "description": "Sofware engineer with experience in web development and Javascript.",
+        "skills_required":["web development", "javascript"]
+    }
+]

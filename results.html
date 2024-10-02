@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Analysis Results</title>
+</head>
+<body>
+    <h1>CV Analysis Results</h1>
+    <h2>Keywords Extracted:</h2>
+    <ul>
+        {% for keyword in keywords %}
+        <li>{{ keyword }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Job Matches:</h2>
+    <ul>
+        {% for match in job_matches %}
+        <li>
+            <strong>Title:</strong> {{ match.title }}<br>
+            <strong>Description:</strong> {{ match.description }}<br>
+            <strong>Match Score:</strong> {{ match.match_score }}%
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Visualization:</h2>
+    <img src="{{ url_for('static', filename='results_plot.png') }}" alt="Job Match Scores">
+</body>
+</html>
